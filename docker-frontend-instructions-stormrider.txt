@@ -1,0 +1,21 @@
+Docker frontend instructions - stormrider:
+
+Dockerfile:
+
+FROM node:latest
+
+WORKDIR /stormrider-frontend
+
+COPY package*.json /stormrider-frontend/
+
+RUN npm install
+
+COPY . /stormrider-frontend/
+
+EXPOSE 3000
+CMD ["npm","start"]
+
+#### Go to correct directory and build image then create and run container:
+docker build -t stormrider-frontend .
+docker run -tid --name stormrider-frontend --network stormrider -p 3000:3000 stormrider-frontend
+

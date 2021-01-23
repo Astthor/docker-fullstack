@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+:root {
+  --white: #fff;
+  --gray: #F4F4F4;
+  --dark-gray: #252629;
+  --bg-black: #0F0F10;
+  --black: #000;
+
+  --light-blue: #B4CbD9;
+  --blue: #3B799F;
+  --dark-blue: #314759;
+
+  --header-font: "Marcellus SC", "Mukta Mahee", sans-serif;
+  --body-font: "Mukta Mahee", sans-serif;
+  --number-font: "PT sans", "mukta Mahee", sans-serif;
+}
+
+
+/*======================================================================================================================
+ F O N T S
+======================================================================================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--header-font);
+}
+
+body {
+  font-family: var(--body-font);
+  z-index: 1;
+}
+
+header {
+  font-family: var(--header-font);
+  font-size: 1.3em;
+}
+
+
+
+/*======================================================================================================================
+ C O M P O N E N T S
+======================================================================================================================*/
+
+
+/*  NavBar  ------------------------------------------*/
+
+Nav {
+  text-align: right;
+  font-family: var(--header-font);
+  background-image: url("./header.jpg");
+}
+
+.nav-link {
+  font-family: var(--header-font);
+  font-size: 26px;
+  transition: color, 1s;
+  margin-left: 25px;
+}
+
+/*  ProductList  --------------------------------------*/
+
+.card-frame {
+  padding-top: 60px;
+  align-content: center;
+}
+
+.card-title {
+  font-family: var(--header-font);
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.card-description {
+  font-family: var(--header-font);
+  color: dimgrey;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-border {
+  transition: transform 1s, box-shadow 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-border:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.2), 0 6px 60px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*  Welcome  -------------------------------------------*/
+
+.welcome {
+  font-family: var(--header-font);
+  text-align: center;
+  font-size: 100px;
+}
+
+.welcome-message {
+  font-family: var(--header-font);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  color: var(--gray);
+}
+

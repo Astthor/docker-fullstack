@@ -1,0 +1,18 @@
+Backend instructions:
+
+Creating the jar file with container db connections set:
+% mvn clean package -Dmaven.test.skip=true
+
+Docker file:
+FROM openjdk:latest
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+EXPOSE 8888
+ENTRYPOINT ["java","-jar","/app.jar"]
+
+Terminal commands:
+% docker build -t stormrider-backend . 
+% docker run -tid --name stormrider-backend --network stormrider -p 8888:8888 stormrider-backend
+
+
+

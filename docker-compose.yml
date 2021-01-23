@@ -1,0 +1,18 @@
+version: "3"
+services:
+  stormrider-backend:
+    container_name: stormrider-backend
+    restart: always
+    build:
+      ./storm-backend
+    ports:
+    - "8888:8888"
+  stormrider-frontend:
+    container_name: stormrider-frontend
+    restart: always
+    build:
+      ./storm-frontend
+    ports:
+    - "3000:3000"
+    links:
+      - stormrider-backend

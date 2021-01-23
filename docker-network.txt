@@ -1,0 +1,27 @@
+Docker Commands:
+
+NETWORK:
+
+docker network create stormrider
+docker network ls
+
+ 
+MYSQL:
+docker run --name stormriderdb --network stormrider -e MYSQL_USER=storm -e MYSQL_PASSWORD=rider -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=stormrider -p 3307:3306 -d mysql
+
+docker exec -i stormriderdb mysql -uroot -proot < /Users/thori/Documents/stormscript.sql
+docker exec -i stormriderdb mysql -uroot -proot </Users/thori/Documents/stormscript-insert.sql 
+
+
+
+
+
+To access the volume inside the linux vm:
+Command to access the vm:
+docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh
+Path to volume db's (in this case the specific one for stormriderdb - the long number is the anonymous volume):
+cd /var/lib/docker/volumes/93f7e784908368dd64a14d74d435208782f2190fce4fb36dfdbda1938dc37c44/_data
+Source: https://stackoverflow.com/questions/38532483/where-is-var-lib-docker-on-mac-os-x
+Too get out of the vm: "ctrl+d"
+
+
