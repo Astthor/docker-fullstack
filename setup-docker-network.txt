@@ -9,14 +9,15 @@ docker network ls
 MYSQL:
 docker run --name stormriderdb --network stormrider -e MYSQL_USER=storm -e MYSQL_PASSWORD=rider -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=stormrider -p 3307:3306 -d mysql
 
-docker exec -i stormriderdb mysql -uroot -proot < /Users/thori/Documents/stormscript.sql
-docker exec -i stormriderdb mysql -uroot -proot </Users/thori/Documents/stormscript-insert.sql 
+// Used 2 different scripts: 1 for DB creation and one for populating the tables: 
+docker exec -i stormriderdb mysql -uroot -proot <PathToScript>.sql 
+docker exec -i stormriderdb mysql -uroot -proot <PathToScript>.sql 
 
 
 
 
 
-To access the volume inside the linux vm:
+To access the volume inside the linux vm if on MacOS:
 Command to access the vm:
 docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh
 Path to volume db's (in this case the specific one for stormriderdb - the long number is the anonymous volume):
