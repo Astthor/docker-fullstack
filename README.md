@@ -2,6 +2,15 @@
 
 Deploying a client-server application to docker.
 
+Instructions:
+Using docker, follow the 3 .txt guides named:
+# 1: setup-docker-network.txt
+# 2: backend-stormrider-docker-instructions.txt
+# 3: docker-frontend-instructions-stormrider.txt
+
+
+ABOUT:
+
 The application:
 A school project for a real client that needed an ecommmerce site that supported multiple languages for his business; selling riding equipment. 
 Client opted for a different solution due to time constraints and upon our recommendations concerning security for the site. 
