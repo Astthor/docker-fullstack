@@ -4,8 +4,11 @@ Deploying a client-server application to docker.
 
 # Instructions:
 Using docker, follow the 3 .txt guides in the following order:
+
 1: setup-docker-network.txt
+
 2: backend-stormrider-docker-instructions.txt
+
 3: docker-frontend-instructions-stormrider.txt
 
 
