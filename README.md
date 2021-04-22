@@ -15,6 +15,8 @@ Using database files to set up the database:
 
 stormrider_insert_values_script_20201211.sql & stormrider_schema_script_20201211.sql 
 
+NOTE: Docker instructions don't include persisting data in any way, the same commands can be used to persist data by adding a volume to the database. 
+
 
 # About:
 
