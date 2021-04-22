@@ -1,15 +1,15 @@
-# docker-fullstack
+# docker-fullstack (Stormrider)
 
 Deploying a client-server application to docker.
 
-Instructions:
-Using docker, follow the 3 .txt guides named:
-# 1: setup-docker-network.txt
-# 2: backend-stormrider-docker-instructions.txt
-# 3: docker-frontend-instructions-stormrider.txt
+# Instructions:
+Using docker, follow the 3 .txt guides in the following order:
+1: setup-docker-network.txt
+2: backend-stormrider-docker-instructions.txt
+3: docker-frontend-instructions-stormrider.txt
 
 
-ABOUT:
+# About:
 
 The application:
 A school project for a real client that needed an ecommmerce site that supported multiple languages for his business; selling riding equipment. 
