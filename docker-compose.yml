@@ -1,3 +1,9 @@
+
+# NOTE: Didn't use docker-compose, instead set up the network and docker files using the following txt instructions:
+# 1: setup-docker-network.txt
+# 2: backend-stormrider-docker-instructions.txt
+# 3: docker-frontend-instructions-stormrider.txt
+
 version: "3"
 services:
   stormrider-backend:
