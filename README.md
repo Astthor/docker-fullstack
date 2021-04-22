@@ -11,6 +11,10 @@ Using docker, follow the 3 .txt guides in the following order:
 
 3: docker-frontend-instructions-stormrider.txt
 
+Using database files to set up the database:
+
+stormrider_insert_values_script_20201211.sql & stormrider_schema_script_20201211.sql 
+
 
 # About:
 
