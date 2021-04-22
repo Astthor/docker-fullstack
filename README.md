@@ -21,15 +21,22 @@ Client opted for a different solution due to time constraints and upon our recom
 Current state of the application:
 
 Database: MySQL 
+
 Design is far along, we expect future iterations to reveal some minor changes along the way, but we don't expect any major changes to be needed.
+
 Currently supports multiple languages and is designed to be scalable both in terms of easily adding new languages and possible future products that the customer might start selling. 
 
-Backend: Java / Spring Boot
+Backend: 
+Java / Spring Boot
+
 Design and implementation is not far along.
+
 Read only Rest API's for Category, Subcategory and Productgroup. 
+
 Language selection support. 
 
 Frontend: React
+
 Fetches data from the backend using Ajax and displays categories, subcategories and product groups dynamically based on data passed from the API's.
 
 
